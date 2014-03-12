@@ -4,6 +4,7 @@ import java.awt.CardLayout;
 import java.io.File;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
@@ -15,7 +16,8 @@ import de.derivo.sparqldlapi.exceptions.QueryParserException;
 
 public class Workflow {    
     private JFrame frame;
-    private JPanel cards;
+    private CardLayout cardlayout;
+    private JPanel cardpanel;
     private Ontology ontology;
     private OntologyBuilder ontology_builder;
     
@@ -34,23 +36,27 @@ public class Workflow {
     }
     
     public void configure() throws OWLOntologyCreationException, QueryParserException, QueryEngineException {
-        this.cards = new JPanel( new CardLayout() );
+        this.cardlayout = new CardLayout();
+        this.cardpanel = new JPanel( this.cardlayout );
         this.ontology_builder = new OntologyBuilder();
         this.ontology_builder.importOWLOntology();
         this.ontology = this.ontology_builder.getOntology();
         this.ontology.TestQueries();
+        
+        this.buildRecipeRestrictionsForm();
     }
     
     public void start() {
-//        this.frame.pack();
-//        this.frame.setVisible(true);
+        this.frame.setSize(300,400);
+        this.frame.pack();
+        this.frame.setVisible(true);
     }
     
-    public void buildRecipeRestrictionsForm() {
+    public void buildRecipeRestrictionsForm() throws QueryParserException, QueryEngineException {
         RecipeRestrictionsForm form = new RecipeRestrictionsForm();
-        
-        form.buildForm();
-        
+
+        this.cardpanel.add( form.buildForm(this.ontology), RECIPE_RESTRICTIONS_FORM );
+        this.frame.add(this.cardpanel);
     }
 
 
