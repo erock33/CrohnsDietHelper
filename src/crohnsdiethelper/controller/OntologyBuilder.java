@@ -44,7 +44,7 @@ public class OntologyBuilder {
      * Check if there is a local ontology file. Otherwise use the
      * default provided in the jar file.
      */
-    public Ontology importOWLOntology() throws OWLOntologyCreationException, QueryParserException, QueryEngineException {
+    public OWLOntology importOWLOntology() throws OWLOntologyCreationException, QueryParserException, QueryEngineException {
         // Find OWL file
         String filename = System.getProperty("user.dir") + File.separator + "crohnsdiethelper.owl";
         File f = new File(filename);
@@ -87,10 +87,8 @@ public class OntologyBuilder {
         boolean consistent = this.owl_reasoner.isConsistent();
         System.out.println("Consistent: " + consistent);
         System.out.println("\n");
-        
-        
-        
-        return this.ontology;
+               
+        return this.owl_ontology;
     }
     
     public OWLReasoner setupReasoner() {
