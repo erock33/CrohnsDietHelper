@@ -94,8 +94,7 @@ public class Workflow {
                    }
                }
                HashSet<String> userIngrSet = new HashSet<String>(userIngredients);
-               System.out.println("userIngrSet");
-               System.out.println(userIngrSet);
+
                // Stick ingredient list in hash for quick retrieval later
                
                // Get Color
@@ -132,20 +131,15 @@ public class Workflow {
                         // TODO Auto-generated catch block
                         e1.printStackTrace();
                     }
-                   System.out.println("recipeIngr");
-                   System.out.println(recipeIngredientIRI);
-                   
+
                    // For each ingredient, check if it's available
-                   System.out.println(userIngrSet);
                    Iterator j = recipeIngredientIRI.iterator();
                    drinkFound = true;
                    drinkIngr = new ArrayList<String>();
 
                    while(j.hasNext()) {
                        String ingIRI = (String) j.next();
-                       System.out.println(ingIRI + " "+ userIngrSet.contains(ingIRI));
                        if( userIngrSet.contains(ingIRI) ){
-                           System.out.println("Found "+ingIRI);
                            drinkIngr.add(ingIRI);
                        }
                        else
@@ -172,7 +166,6 @@ public class Workflow {
                            // This may change in the future if we keep track of how much
                            // of each item the user has.
                            drinkIngr.add(subs.get(0));
-                            System.out.println(subs);   
                        }
                    }
                    
@@ -183,14 +176,11 @@ public class Workflow {
                }
                
                if( drinkFound ){
-                   System.out.println("Here's your drink");
-                   System.out.println(recipeIRI);
-                   System.out.println(recipeIngredientIRI);
-                   System.out.println(drinkIngr);
+                   
                }
                else
                {
-                   System.out.println("Could not find any recipes.");
+                   
                }
                
                try {
