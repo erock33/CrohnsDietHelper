@@ -50,7 +50,6 @@ public class Workflow {
         this.ontology_builder = new OntologyBuilder();
         this.ontology_builder.importOWLOntology();
         this.ontology = this.ontology_builder.getOntology();
-//        this.ontology.TestQueries();
         
         this.buildRecipeRestrictionsForm();
     }
@@ -67,6 +66,12 @@ public class Workflow {
         
         this.cardpanel.add( form.buildForm(this.ontology), RECIPE_RESTRICTIONS_FORM );
         this.cardpanel.add( resultsView.buildView(this.ontology), RECIPE_RESULTS);
+        
+        resultsView.getBackButton().addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                cardlayout.show(cardpanel, RECIPE_RESTRICTIONS_FORM);
+            }
+        });
         
         form.getFindButton().addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
