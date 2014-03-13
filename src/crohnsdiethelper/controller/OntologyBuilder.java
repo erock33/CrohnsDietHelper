@@ -48,27 +48,19 @@ public class OntologyBuilder {
         // Find OWL file
         String filename = System.getProperty("user.dir") + File.separator + "crohnsdiethelper.owl";
         File f = new File(filename);
-        System.out.println(filename);
         if( f.exists() ) {
-            System.out.println("Found owl file");
+            // Found owl file, we should use it instead
         }
         else {
             filename =  "data" + File.separator + "crohnsdiethelper.owl";
-            System.out.println(filename);
             f = new File(filename);
-            
-            System.out.println("Use default");
 
             if( f.exists() ){
-                System.out.println("Found default");
                 this.owl_ontology = this.owl_manager.loadOntologyFromOntologyDocument(f);
-//                this.ontology = new Ontology(owl_ontology);
                 this.iri = this.owl_manager.getOntologyDocumentIRI(this.owl_ontology);
-                System.out.println("    from: " + this.iri);
             }
             else 
             {
-                System.out.println("No default");
                 return(null);
             }    
         }
@@ -80,8 +72,6 @@ public class OntologyBuilder {
         
         this.owl_reasoner.precomputeInferences();
         boolean consistent = this.owl_reasoner.isConsistent();
-        System.out.println("Consistent: " + consistent);
-        System.out.println("\n");
                
         return this.owl_ontology;
     }
