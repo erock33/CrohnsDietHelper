@@ -30,7 +30,6 @@ public class RecipeResultsView {
 
     public void updateView(String recipeIRI, ArrayList<String> drinkIngr) throws QueryParserException, QueryEngineException {
         String name = ontology.getRecipeName(recipeIRI);
-        System.out.println(name);
         JLabel title = new JLabel(name);
         Font titleFont = title.getFont();
         title.setFont(new Font(titleFont.getName(), Font.PLAIN, 20));

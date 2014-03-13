@@ -89,9 +89,6 @@ public class Ontology {
         );
         
         QueryResult qr = qengine.execute(q);
-        System.out.println("Query Results");
-        System.out.println(qr);
-        System.out.println(qr.size());
         
         Iterator<QueryBinding> it = qr.iterator();
         while( it.hasNext() ) {
@@ -209,7 +206,6 @@ public class Ontology {
         +" PropertyValue( <" + ingrIRI + ">, ?subprop, ?ingredient) "
         +" }"
         ;
-        System.out.println(query);
         Query q = Query.create(query);
         QueryResult qr = qengine.execute(q);
         
