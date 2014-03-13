@@ -8,24 +8,29 @@
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY webprotege "http://protege.stanford.edu/webprotege/" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY DOC_Ontology_Hobbs_Taylor "http://webprotege.stanford.edu/DOC_Ontology_Hobbs_Taylor#" >
+    <!ENTITY DOC_Ontology_Hobbs_Taylor2 "http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#" >
 ]>
 
 
-<rdf:RDF xmlns="http://webprotege.stanford.edu/project/DietOntologyForCrohns#"
-     xml:base="http://webprotege.stanford.edu/project/DietOntologyForCrohns"
+<rdf:RDF xmlns="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#"
+     xml:base="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:webprotege="http://protege.stanford.edu/webprotege/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://webprotege.stanford.edu/project/DietOntologyForCrohns">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:DOC_Ontology_Hobbs_Taylor="http://webprotege.stanford.edu/DOC_Ontology_Hobbs_Taylor#"
+     xmlns:DOC_Ontology_Hobbs_Taylor2="http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#">
+    <owl:Ontology rdf:about="http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor">
         <webprotege:revision rdf:datatype="&xsd;integer">212</webprotege:revision>
         <rdfs:comment rdf:datatype="&xsd;string">Inflammatory Bowel Diseases Diet Ontology - An ontology for diet and nutrition in the treatment of Crohn&apos;s disease.</rdfs:comment>
         <dc:date rdf:datatype="&xsd;dateTime">Mar 7, 2014 10:26:32 PM</dc:date>
         <rdfs:comment rdf:datatype="&xsd;string">This ontology was generated from an ontology revision in WebProtégé http://webprotege.stanford.edu</rdfs:comment>
         <dc:creator rdf:datatype="&xsd;string">nptaylor@stanford.edu</dc:creator>
         <dc:creator rdf:datatype="&xsd;string">system</dc:creator>
+        <owl:versionIRI rdf:resource="http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor/2.0.0"/>
     </owl:Ontology>
     
 
@@ -41,47 +46,72 @@
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasFruit -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasIngredient -->
 
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasFruit">
-        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R9X2dc8jYSODEEaO1rYWETE"/>
-        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasIngredient"/>
+    <owl:ObjectProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasIngredient"/>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasIngredientFruit -->
+
+    <owl:ObjectProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasIngredientFruit">
+        <rdfs:range rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Fruits"/>
+        <rdfs:subPropertyOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasIngredient"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasFruitSubstitute -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasIngredientSpice -->
 
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasFruitSubstitute">
-        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasSubstitue"/>
+    <owl:ObjectProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasIngredientSpice">
+        <rdfs:subPropertyOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasIngredient"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasIngredient -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasIngredientSupplement -->
 
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasIngredient"/>
-    
-
-
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasSubstitue -->
-
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasSubstitue"/>
-    
-
-
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasVegetable -->
-
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasVegetable">
-        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasIngredient"/>
+    <owl:ObjectProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasIngredientSupplement">
+        <rdfs:subPropertyOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasIngredient"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasVegetableSubstitute -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasIngredientVegetable -->
 
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasVegetableSubstitute">
-        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasSubstitue"/>
+    <owl:ObjectProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasIngredientVegetable">
+        <rdfs:range rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Vegetables"/>
+        <rdfs:subPropertyOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasIngredient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasSubstitute -->
+
+    <owl:ObjectProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasSubstitute"/>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasSubstituteFruit -->
+
+    <owl:ObjectProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasSubstituteFruit">
+        <rdfs:subPropertyOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSubstitute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasSubstituteSupplement -->
+
+    <owl:ObjectProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasSubstituteSupplement">
+        <rdfs:subPropertyOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSubstitute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasSubstituteVegetable -->
+
+    <owl:ObjectProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasSubstituteVegetable">
+        <rdfs:subPropertyOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSubstitute"/>
     </owl:ObjectProperty>
     
 
@@ -97,51 +127,169 @@
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasCalories -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasCalories -->
 
-    <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasCalories"/>
+    <owl:DatatypeProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasCalories">
+        <rdfs:domain rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Food"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasCarbohydrates -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasCarbohydrates -->
 
-    <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasCarbohydrates"/>
+    <owl:DatatypeProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasCarbohydrates">
+        <rdfs:domain rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Food"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasFat -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasFat -->
 
-    <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasFat"/>
+    <owl:DatatypeProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasFat">
+        <rdfs:domain rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Food"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasFiber -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasFiber -->
 
-    <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasFiber"/>
+    <owl:DatatypeProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasFiber">
+        <rdfs:domain rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Food"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasProtien -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasProtien -->
 
-    <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasProtien"/>
+    <owl:DatatypeProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasProtien">
+        <rdfs:domain rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Food"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasSalt -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasQuantity -->
 
-    <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasSalt"/>
+    <owl:DatatypeProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasQuantity">
+        <rdfs:domain rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Food"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasSaturatedFat -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasRecipe -->
 
-    <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasSaturatedFat"/>
+    <owl:DatatypeProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasRecipe">
+        <rdfs:domain rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Beverages"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasSugar -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasRecipeName -->
 
-    <owl:DatatypeProperty rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasSugar"/>
+    <owl:DatatypeProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasRecipeName">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasRecipeNameJuice -->
+
+    <owl:DatatypeProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasRecipeNameJuice">
+        <rdfs:domain rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Juices"/>
+        <rdfs:subPropertyOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasRecipeName"/>
+        <owl:propertyDisjointWith rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasRecipeNameSmoothie"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasRecipeNameSmoothie -->
+
+    <owl:DatatypeProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasRecipeNameSmoothie">
+        <rdfs:domain rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Smoothies"/>
+        <rdfs:subPropertyOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasRecipeName"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasSaturatedFat -->
+
+    <owl:DatatypeProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasSaturatedFat">
+        <rdfs:domain rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Food"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasSize -->
+
+    <owl:DatatypeProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasSize">
+        <rdfs:domain rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Food"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasSodium -->
+
+    <owl:DatatypeProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasSodium">
+        <rdfs:domain rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Food"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#hasSugar -->
+
+    <owl:DatatypeProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasSugar">
+        <rdfs:domain rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Food"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#isColor -->
+
+    <owl:DatatypeProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;isColor">
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#isJuiceColor -->
+
+    <owl:DatatypeProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;isJuiceColor">
+        <rdfs:domain rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Juices"/>
+        <rdfs:subPropertyOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isColor"/>
+        <owl:propertyDisjointWith rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isSmoothieColor"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#isOptional -->
+
+    <owl:DatatypeProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;isOptional">
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#isSmoothieColor -->
+
+    <owl:DatatypeProperty rdf:about="&DOC_Ontology_Hobbs_Taylor2;isSmoothieColor">
+        <rdfs:domain rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Smoothies"/>
+        <rdfs:subPropertyOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isColor"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -156,967 +304,2734 @@
     
 
 
-    <!-- http://webprotege.stanford.edu/R3tRjVPjsGhmQ33dlPMjop -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#AlmondMilk -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R3tRjVPjsGhmQ33dlPMjop">
-        <rdfs:label>RedBellPeppers</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R94kG9XVwy3ffeRVHZtIXTx"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;AlmondMilk">
+        <rdfs:label>AlmondMilk</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;NonDairyMilk"/>
+        <owl:disjointWith rdf:resource="&DOC_Ontology_Hobbs_Taylor2;SoyMilk"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/R784ZZZpatQISva2CwsCqRl -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Almonds -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R784ZZZpatQISva2CwsCqRl">
-        <rdfs:label rdf:datatype="&xsd;string">Cucumbers</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8WKDnMfWql1ZzMb2xUjtOS"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Almonds">
+        <rdfs:label rdf:datatype="&xsd;string">Almonds</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Supplements"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/R7AxQzQumCwXyhfyLYNrl5m -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Apples -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R7AxQzQumCwXyhfyLYNrl5m">
-        <rdfs:label rdf:datatype="&xsd;string">Peaches</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R99wKd5VRYRuDjs7bHzDoUV"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R7LOX2PegjvwvWy4rqRHvRb -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R7LOX2PegjvwvWy4rqRHvRb">
-        <rdfs:label>Kale</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDTd6xiUYbXiIrp1fagIzCm"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R7bmhQ7w6436xGaZe4Fmx2x -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R7bmhQ7w6436xGaZe4Fmx2x">
-        <rdfs:label>PurpleGrapes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDbFDzVHkH20GXAOguu2TZ8"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R7isXRHpByn2ImtA1lNdcxO -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R7isXRHpByn2ImtA1lNdcxO">
-        <rdfs:label>RedGrapes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDbFDzVHkH20GXAOguu2TZ8"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R7kYdX2qkLZEY7A7cKj1Kc -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R7kYdX2qkLZEY7A7cKj1Kc">
-        <rdfs:label>WheyProtien</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RchQ1CFDUZOv1WqGzmVZuL"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R7nYzpxiScsUZvVU1X9VNAg -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R7nYzpxiScsUZvVU1X9VNAg">
-        <rdfs:label rdf:datatype="&xsd;string">Papayas</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBxcEZxNawMWTAWQwuUZjX"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R7v71SVrF2EwnmdTYqWNG3W -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R7v71SVrF2EwnmdTYqWNG3W">
-        <rdfs:label rdf:datatype="&xsd;string">Lemons</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDje9GnmAppkmK3evkgMnh7"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R7wTLrYsHIlUpHXZggUG5oQ -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R7wTLrYsHIlUpHXZggUG5oQ">
-        <rdfs:label rdf:datatype="&xsd;string">Limes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDje9GnmAppkmK3evkgMnh7"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R7xeVTmCRh2a2VrMViQtItO -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R7xeVTmCRh2a2VrMViQtItO">
-        <rdfs:label>Stems</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9h4m4h9shpt9Yk8LV0YHQ4"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R87vVpnD275mnmhqhSbylXv -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R87vVpnD275mnmhqhSbylXv">
-        <rdfs:label>GreenBellPeppers</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R94kG9XVwy3ffeRVHZtIXTx"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R883aV3lA2tz3pAZy2qt4zO -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R883aV3lA2tz3pAZy2qt4zO">
-        <rdfs:label>Tangerines</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDje9GnmAppkmK3evkgMnh7"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R8DUN7MmSYkdqRR7CXdaFNJ -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R8DUN7MmSYkdqRR7CXdaFNJ">
-        <rdfs:label>Blueberries</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCWAHrzNX5XbKrM1mSufil6"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R8PrV6nx814N5Pa2Xm4fxzX -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R8PrV6nx814N5Pa2Xm4fxzX">
-        <rdfs:label rdf:datatype="&xsd;string">Beets</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rw7MVvANVjTkD4WZtIvdSI"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R8WKDnMfWql1ZzMb2xUjtOS -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R8WKDnMfWql1ZzMb2xUjtOS">
-        <rdfs:label>VegetableFruits</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9h4m4h9shpt9Yk8LV0YHQ4"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R8gsFGkjkZnmC8omUP6jxTv -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R8gsFGkjkZnmC8omUP6jxTv">
-        <rdfs:label rdf:datatype="&xsd;string">ChiaSeeds</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RchQ1CFDUZOv1WqGzmVZuL"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R8saY3hHtx6k2k9k5NKoBJi -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R8saY3hHtx6k2k9k5NKoBJi">
-        <rdfs:label rdf:datatype="&xsd;string">Carrots</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rw7MVvANVjTkD4WZtIvdSI"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R8vvveyNSyo50Jraw4kem0H -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R8vvveyNSyo50Jraw4kem0H">
-        <rdfs:label>Ginger</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rtwc1QJZQWyDwpvPSJJUr8"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R94kG9XVwy3ffeRVHZtIXTx -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R94kG9XVwy3ffeRVHZtIXTx">
-        <rdfs:label>BellPeppers</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8WKDnMfWql1ZzMb2xUjtOS"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R99wKd5VRYRuDjs7bHzDoUV -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R99wKd5VRYRuDjs7bHzDoUV">
-        <rdfs:label rdf:datatype="&xsd;string">PittedFruits</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9X2dc8jYSODEEaO1rYWETE"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R9HaGXCKQo4SJI5ygpbbWEl -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R9HaGXCKQo4SJI5ygpbbWEl">
-        <rdfs:label>Food</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R9Id8L8vO9OlozHsIM47YOB -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R9Id8L8vO9OlozHsIM47YOB">
-        <rdfs:label>Thyme</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rtwc1QJZQWyDwpvPSJJUr8"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R9JT2e3xZ12fK6sr0qAYn76 -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R9JT2e3xZ12fK6sr0qAYn76">
-        <rdfs:label>NonDairyMilk</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDTMGUzUKYJMfdkESDbBQFF"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R9NxBQ8XyonDc5A4l3QftZl -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R9NxBQ8XyonDc5A4l3QftZl">
-        <rdfs:label>Tubers</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9h4m4h9shpt9Yk8LV0YHQ4"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R9RNrz8tfBQWLcTiIbK8m8 -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R9RNrz8tfBQWLcTiIbK8m8">
-        <rdfs:label>Blackberries</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCWAHrzNX5XbKrM1mSufil6"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R9X0DIWTMa7SDweVnuFScd0 -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R9X0DIWTMa7SDweVnuFScd0">
-        <rdfs:label>Cherries</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R99wKd5VRYRuDjs7bHzDoUV"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R9X2dc8jYSODEEaO1rYWETE -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R9X2dc8jYSODEEaO1rYWETE">
-        <rdfs:label rdf:datatype="&xsd;string">Fruits</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9HaGXCKQo4SJI5ygpbbWEl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R9a5I0MRWnKfj9WUNql1N8t -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R9a5I0MRWnKfj9WUNql1N8t">
-        <rdfs:label>GreenGrapes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDbFDzVHkH20GXAOguu2TZ8"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R9aPM5bbjjlbNagUVYbFDEX -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R9aPM5bbjjlbNagUVYbFDEX">
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Apples">
         <rdfs:label rdf:datatype="&xsd;string">Apples</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBdcIhZP2yQ7pVZ4H2fFgFF"/>
-        <owl:disjointWith rdf:resource="http://webprotege.stanford.edu/RRyuls0YJIiutZCjSRCnmF"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R9b4YBcLzxKCvR7s4LbOhC5 -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R9b4YBcLzxKCvR7s4LbOhC5">
-        <rdfs:label>FlaxSeeds</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RchQ1CFDUZOv1WqGzmVZuL"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R9h4m4h9shpt9Yk8LV0YHQ4 -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R9h4m4h9shpt9Yk8LV0YHQ4">
-        <rdfs:label rdf:datatype="&xsd;string">Vegetables</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9HaGXCKQo4SJI5ygpbbWEl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R9rw5gzni1NpocJEAA4KKo4 -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R9rw5gzni1NpocJEAA4KKo4">
-        <rdfs:label rdf:datatype="&xsd;string">Juices</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RkYtYVYX5Ns7ZL5U1NPPrB"/>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;CoredFruits"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://webprotege.stanford.edu/RBxcEZxNawMWTAWQwuUZjX"/>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasIngredient"/>
-                        <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/R9X2dc8jYSODEEaO1rYWETE"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasProtien"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/R9h4m4h9shpt9Yk8LV0YHQ4"/>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSaturatedFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSodium"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSugar"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">19</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCalories"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">95</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCarbohydrates"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">25</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFiber"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">4</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isOptional"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Pears"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Apricots -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Apricots">
+        <rdfs:label>Apricots</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;PittedFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Asparagus -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Asparagus">
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Stems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Avocados -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Avocados">
+        <rdfs:label rdf:datatype="&xsd;string">Avocados</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;TropicalFruits"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSugar"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCarbohydrates"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">17</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCalories"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">332</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSaturatedFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">4</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasProtien"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">4</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isOptional"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">29</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFiber"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">14</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSodium"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">14</owl:hasValue>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/R9rxq8NkMfZ4e8AhKZEPLTo -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Bananas -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R9rxq8NkMfZ4e8AhKZEPLTo">
-        <rdfs:label>BlackTeas</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBUgsJjU6WMKXw6UoirxCCZ"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R9x252FO29bGwJm2UrfvFPz -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R9x252FO29bGwJm2UrfvFPz">
-        <rdfs:label rdf:datatype="&xsd;string">Tomatoes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8WKDnMfWql1ZzMb2xUjtOS"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RB7GKLP4R0lHD32bQZRCfce -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RB7GKLP4R0lHD32bQZRCfce">
-        <rdfs:label>Mint</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rtwc1QJZQWyDwpvPSJJUr8"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RBBJEpA5DeRwIC1aKwstj90 -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RBBJEpA5DeRwIC1aKwstj90">
-        <rdfs:label rdf:datatype="&xsd;string">SweetPotatoes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9NxBQ8XyonDc5A4l3QftZl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RBDKebmn3w58CmN5rweEnNM -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RBDKebmn3w58CmN5rweEnNM">
-        <rdfs:label>Lettuce</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDTd6xiUYbXiIrp1fagIzCm"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RBDxNjCKHNNQ4HGipRQQVEh -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RBDxNjCKHNNQ4HGipRQQVEh">
-        <rdfs:label>Honeydew</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCNaqD18JaPJjdjnuL4E6aA"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RBL9mLW9KMviazeVNgx9Nh3 -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RBL9mLW9KMviazeVNgx9Nh3">
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Bananas">
         <rdfs:label rdf:datatype="&xsd;string">Bananas</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBxcEZxNawMWTAWQwuUZjX"/>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;TropicalFruits"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSugar"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">14</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFiber"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasProtien"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSaturatedFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCarbohydrates"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">27</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCalories"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">105</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isOptional"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSodium"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/RBSSODCUQYmMnyCj8JTVOGg -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Basil -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RBSSODCUQYmMnyCj8JTVOGg">
-        <rdfs:label>OolongTeas</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBUgsJjU6WMKXw6UoirxCCZ"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RBSxGQdKIRbcYCGUB0mOzEQ -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RBSxGQdKIRbcYCGUB0mOzEQ">
-        <rdfs:label rdf:datatype="&xsd;string">Watermelons</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCNaqD18JaPJjdjnuL4E6aA"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RBUgsJjU6WMKXw6UoirxCCZ -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RBUgsJjU6WMKXw6UoirxCCZ">
-        <rdfs:label>HerbalTeas</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDTMGUzUKYJMfdkESDbBQFF"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RBdcIhZP2yQ7pVZ4H2fFgFF -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RBdcIhZP2yQ7pVZ4H2fFgFF">
-        <rdfs:label rdf:datatype="&xsd;string">CoredFruits</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9X2dc8jYSODEEaO1rYWETE"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RBiuURjMoAklkXmvxuQKgw6 -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RBiuURjMoAklkXmvxuQKgw6">
-        <rdfs:label rdf:datatype="&xsd;string">Walnuts</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RchQ1CFDUZOv1WqGzmVZuL"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RBmNwWIqvE92KzSeQ3QPAMj -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RBmNwWIqvE92KzSeQ3QPAMj">
-        <rdfs:label>Coconuts</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBxcEZxNawMWTAWQwuUZjX"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RBxcEZxNawMWTAWQwuUZjX -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RBxcEZxNawMWTAWQwuUZjX">
-        <rdfs:label>TropicalFruits</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9X2dc8jYSODEEaO1rYWETE"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RC1TWDyqqx0dDAQrvmflsnP -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RC1TWDyqqx0dDAQrvmflsnP">
-        <rdfs:label>CacaoPowder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RchQ1CFDUZOv1WqGzmVZuL"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RC3U8tybGgjqNdpmHpVgi2d -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RC3U8tybGgjqNdpmHpVgi2d">
-        <rdfs:label rdf:datatype="&xsd;string">Almonds</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RchQ1CFDUZOv1WqGzmVZuL"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RCNaqD18JaPJjdjnuL4E6aA -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RCNaqD18JaPJjdjnuL4E6aA">
-        <rdfs:label rdf:datatype="&xsd;string">Melons</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9X2dc8jYSODEEaO1rYWETE"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RCPTT4LWZ09cooAyhBT4DTz -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RCPTT4LWZ09cooAyhBT4DTz">
-        <rdfs:label>Raspberries</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCWAHrzNX5XbKrM1mSufil6"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RCRxOXzOFHESaYpKfHF2iVX -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RCRxOXzOFHESaYpKfHF2iVX">
-        <rdfs:label>Cranberries</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCWAHrzNX5XbKrM1mSufil6"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RCWAHrzNX5XbKrM1mSufil6 -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RCWAHrzNX5XbKrM1mSufil6">
-        <rdfs:label>Berries</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9X2dc8jYSODEEaO1rYWETE"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RCZ5GPwa9yELCO2u2JKSwnk -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RCZ5GPwa9yELCO2u2JKSwnk">
-        <rdfs:label rdf:datatype="&xsd;string">Pineapples</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBxcEZxNawMWTAWQwuUZjX"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RCsHEtlEpUSTNXbVI321Axg -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RCsHEtlEpUSTNXbVI321Axg">
-        <rdfs:label>Celery</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7xeVTmCRh2a2VrMViQtItO"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RDFemPe7Y4bfzsQi9lgsCcb -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RDFemPe7Y4bfzsQi9lgsCcb">
-        <rdfs:label>GreenTeas</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBUgsJjU6WMKXw6UoirxCCZ"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RDLbJBNH47wS6oogTpNn3QK -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RDLbJBNH47wS6oogTpNn3QK">
-        <rdfs:label>YellowBellPeppers</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R94kG9XVwy3ffeRVHZtIXTx"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RDTMGUzUKYJMfdkESDbBQFF -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RDTMGUzUKYJMfdkESDbBQFF">
-        <rdfs:label>Infusions</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RkYtYVYX5Ns7ZL5U1NPPrB"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RDTd6xiUYbXiIrp1fagIzCm -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RDTd6xiUYbXiIrp1fagIzCm">
-        <rdfs:label>Leaves</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9h4m4h9shpt9Yk8LV0YHQ4"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RDTjnhHEdAHGAEWlgdiBU6K -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RDTjnhHEdAHGAEWlgdiBU6K">
-        <rdfs:label>Radish</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rw7MVvANVjTkD4WZtIvdSI"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RDZFUPkAVuRzKD4miZ7hhYf -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RDZFUPkAVuRzKD4miZ7hhYf">
-        <rdfs:label>RedApples</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9aPM5bbjjlbNagUVYbFDEX"/>
-        <owl:disjointWith rdf:resource="http://webprotege.stanford.edu/RYJz5AepfhsdJ8Yvq4xY9W"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RDbFDzVHkH20GXAOguu2TZ8 -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RDbFDzVHkH20GXAOguu2TZ8">
-        <rdfs:label rdf:datatype="&xsd;string">Grapes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCWAHrzNX5XbKrM1mSufil6"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RDcIY2MB3keoEa0lfrb6hLP -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RDcIY2MB3keoEa0lfrb6hLP">
-        <rdfs:label>Cilantro</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rtwc1QJZQWyDwpvPSJJUr8"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RDhf5uqeNfUkZRKX01rw8ds -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RDhf5uqeNfUkZRKX01rw8ds">
-        <rdfs:label rdf:datatype="&xsd;string">Smoothies</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RkYtYVYX5Ns7ZL5U1NPPrB"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RDje9GnmAppkmK3evkgMnh7 -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RDje9GnmAppkmK3evkgMnh7">
-        <rdfs:label>CitrusFruits</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9X2dc8jYSODEEaO1rYWETE"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RF8uMDTk6ALwJF71QkhUaL -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RF8uMDTk6ALwJF71QkhUaL">
-        <rdfs:label>Water</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDTMGUzUKYJMfdkESDbBQFF"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RGsj7nqfnSNf1QjjzRnVmA -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RGsj7nqfnSNf1QjjzRnVmA">
-        <rdfs:label>HotWater</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RF8uMDTk6ALwJF71QkhUaL"/>
-        <owl:disjointWith rdf:resource="http://webprotege.stanford.edu/Rq61PsYXkjx8noRuN9OuE0"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RIfwpNJIWHGrJmNvTjpBg0 -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RIfwpNJIWHGrJmNvTjpBg0">
-        <rdfs:label rdf:datatype="&xsd;string">Oranges</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDje9GnmAppkmK3evkgMnh7"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RLZgbvUOlRWIwDRuft7641 -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RLZgbvUOlRWIwDRuft7641">
-        <rdfs:label>Apricots</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R99wKd5VRYRuDjs7bHzDoUV"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RMZR1x4lMmvL9M9XwDLUSc -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RMZR1x4lMmvL9M9XwDLUSc">
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Basil">
         <rdfs:label>Basil</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rtwc1QJZQWyDwpvPSJJUr8"/>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Spices"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isOptional"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/ROxfJ1GaeA1DX6TjBcOxV8 -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Beets -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/ROxfJ1GaeA1DX6TjBcOxV8">
-        <rdfs:label>Nectarines</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R99wKd5VRYRuDjs7bHzDoUV"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Beets">
+        <rdfs:label rdf:datatype="&xsd;string">Beets</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Roots"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFiber"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">4</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSaturatedFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCarbohydrates"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">13</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSodium"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">106</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSugar"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">9</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCalories"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">59</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasProtien"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isOptional"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/RPq6JhyL2JJPDaxbyIR9vA -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#BellPeppers -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RPq6JhyL2JJPDaxbyIR9vA">
-        <rdfs:label>Dates</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBxcEZxNawMWTAWQwuUZjX"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;BellPeppers">
+        <rdfs:label>BellPeppers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;VegetableFruits"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/RQE53t1CF2WmO0dvMzX8Lh -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Berries -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RQE53t1CF2WmO0dvMzX8Lh">
-        <rdfs:label>SoyMilk</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9JT2e3xZ12fK6sr0qAYn76"/>
-        <owl:disjointWith rdf:resource="http://webprotege.stanford.edu/RwwVUkKkciMXOtJY62jP87"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Berries">
+        <rdfs:label>Berries</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Fruits"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/RRyuls0YJIiutZCjSRCnmF -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Beverages -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RRyuls0YJIiutZCjSRCnmF">
-        <rdfs:label>Pears</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBdcIhZP2yQ7pVZ4H2fFgFF"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RSt4sa2Z1xIdMks5Q90Cqc -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RSt4sa2Z1xIdMks5Q90Cqc">
-        <rdfs:label>Figs</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBxcEZxNawMWTAWQwuUZjX"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RUGwLFygLBmblqQVKt3XxF -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RUGwLFygLBmblqQVKt3XxF">
-        <rdfs:label>Cinnamon</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rtwc1QJZQWyDwpvPSJJUr8"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RYJz5AepfhsdJ8Yvq4xY9W -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RYJz5AepfhsdJ8Yvq4xY9W">
-        <rdfs:label>GreenApples</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9aPM5bbjjlbNagUVYbFDEX"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/Ra1F0vlLgYC07WxNBm22j8 -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/Ra1F0vlLgYC07WxNBm22j8">
-        <rdfs:label>Plums</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R99wKd5VRYRuDjs7bHzDoUV"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/Rah8kbDCF20McvpNt67sio -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/Rah8kbDCF20McvpNt67sio">
-        <rdfs:label rdf:datatype="&xsd;string">Avocados</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBxcEZxNawMWTAWQwuUZjX"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RbnRHupia6cgBG4X1LmRaY -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RbnRHupia6cgBG4X1LmRaY">
-        <rdfs:label>Cantaloupes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCNaqD18JaPJjdjnuL4E6aA"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RchQ1CFDUZOv1WqGzmVZuL -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RchQ1CFDUZOv1WqGzmVZuL">
-        <rdfs:label rdf:datatype="&xsd;string">Supplements</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9HaGXCKQo4SJI5ygpbbWEl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/Rcx2tbILAHCOtYp0KJ74T7 -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/Rcx2tbILAHCOtYp0KJ74T7">
-        <rdfs:label rdf:datatype="&xsd;string">Kiwis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBxcEZxNawMWTAWQwuUZjX"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RfrkbGdS4l6fFjEAkdbEnn -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RfrkbGdS4l6fFjEAkdbEnn">
-        <rdfs:label>Parsley</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rtwc1QJZQWyDwpvPSJJUr8"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RkHHtx5sibOIb1Fh7TD33G -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RkHHtx5sibOIb1Fh7TD33G">
-        <rdfs:label>Grapefruits</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDje9GnmAppkmK3evkgMnh7"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RkYtYVYX5Ns7ZL5U1NPPrB -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RkYtYVYX5Ns7ZL5U1NPPrB">
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Beverages">
         <rdfs:label>Beverages</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9HaGXCKQo4SJI5ygpbbWEl"/>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Food"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/Rnzulgebh8YIGDoWqG5poR -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#BlackTeas -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/Rnzulgebh8YIGDoWqG5poR">
-        <rdfs:label rdf:datatype="&xsd;string">Mangos</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBxcEZxNawMWTAWQwuUZjX"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;BlackTeas">
+        <rdfs:label>BlackTeas</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;HerbalTeas"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/Rq61PsYXkjx8noRuN9OuE0 -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Blackberries -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/Rq61PsYXkjx8noRuN9OuE0">
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Blackberries">
+        <rdfs:label>Blackberries</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Berries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Blueberries -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Blueberries">
+        <rdfs:label>Blueberries</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Berries"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSodium"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isOptional"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFiber"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">4</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCalories"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">85</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCarbohydrates"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">21</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasProtien"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSaturatedFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSugar"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">15</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#CacaoPowder -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;CacaoPowder">
+        <rdfs:label>CacaoPowder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Supplements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Cantaloupes -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Cantaloupes">
+        <rdfs:label>Cantaloupes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Melons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Carrots -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Carrots">
+        <rdfs:label rdf:datatype="&xsd;string">Carrots</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Roots"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFiber"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSubstituteVegetable"/>
+                <owl:someValuesFrom rdf:resource="&DOC_Ontology_Hobbs_Taylor2;SweetPotatoes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCarbohydrates"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">6</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasProtien"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSaturatedFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSodium"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">42</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCalories"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">25</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSugar"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Celery -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Celery">
+        <rdfs:label>Celery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Stems"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasProtien"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isOptional"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSubstituteVegetable"/>
+                <owl:someValuesFrom rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Cucumbers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCalories"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">6</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCarbohydrates"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFiber"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSugar"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSodium"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">32</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSaturatedFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Cherries -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Cherries">
+        <rdfs:label>Cherries</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;PittedFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#ChiaSeeds -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;ChiaSeeds">
+        <rdfs:label rdf:datatype="&xsd;string">ChiaSeeds</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Supplements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Cilantro -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Cilantro">
+        <rdfs:label>Cilantro</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Spices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Cinnamon -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Cinnamon">
+        <rdfs:label>Cinnamon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Spices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#CitrusFruits -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;CitrusFruits">
+        <rdfs:label>CitrusFruits</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#CoconutWater -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;CoconutWater">
         <rdfs:label>CoconutWater</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RF8uMDTk6ALwJF71QkhUaL"/>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Water"/>
+        <owl:disjointWith rdf:resource="&DOC_Ontology_Hobbs_Taylor2;HotWater"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/RrNwDQd41VCrta80fEaBWw -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Coconuts -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RrNwDQd41VCrta80fEaBWw">
-        <rdfs:label>Spinach</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDTd6xiUYbXiIrp1fagIzCm"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Coconuts">
+        <rdfs:label>Coconuts</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;TropicalFruits"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/Rtwc1QJZQWyDwpvPSJJUr8 -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#CoredFruits -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/Rtwc1QJZQWyDwpvPSJJUr8">
-        <rdfs:label>Spices</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9HaGXCKQo4SJI5ygpbbWEl"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;CoredFruits">
+        <rdfs:label rdf:datatype="&xsd;string">CoredFruits</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Fruits"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/Rw7MVvANVjTkD4WZtIvdSI -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Cranberries -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/Rw7MVvANVjTkD4WZtIvdSI">
-        <rdfs:label>Roots</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9h4m4h9shpt9Yk8LV0YHQ4"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Cranberries">
+        <rdfs:label>Cranberries</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Berries"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/RwwVUkKkciMXOtJY62jP87 -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Cucumbers -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RwwVUkKkciMXOtJY62jP87">
-        <rdfs:label>AlmondMilk</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9JT2e3xZ12fK6sr0qAYn76"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Cucumbers">
+        <rdfs:label rdf:datatype="&xsd;string">Cucumbers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;VegetableFruits"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSaturatedFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isOptional"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasProtien"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFiber"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCarbohydrates"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">11</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSugar"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSodium"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">6</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSubstituteVegetable"/>
+                <owl:someValuesFrom rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Celery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCalories"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">47</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#Asparagus -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Dates -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#Asparagus">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7xeVTmCRh2a2VrMViQtItO"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Dates">
+        <rdfs:label>Dates</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;TropicalFruits"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFiber"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSugar"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSaturatedFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCalories"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">20</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCarbohydrates"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isOptional"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasProtien"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#GreenJuices -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Figs -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#GreenJuices">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9rw5gzni1NpocJEAA4KKo4"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Figs">
+        <rdfs:label>Figs</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;TropicalFruits"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#GreenSmoothies -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#FlaxSeeds -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#GreenSmoothies">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDhf5uqeNfUkZRKX01rw8ds"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;FlaxSeeds">
+        <rdfs:label>FlaxSeeds</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Supplements"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#OrangeJuice -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Food -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#OrangeJuice">
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Food">
+        <rdfs:label>Food</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Fruits -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Fruits">
+        <rdfs:label rdf:datatype="&xsd;string">Fruits</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Ginger -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Ginger">
+        <rdfs:label>Ginger</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Spices"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isOptional"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Grapefruits -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Grapefruits">
+        <rdfs:label>Grapefruits</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;CitrusFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Grapes -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Grapes">
+        <rdfs:label rdf:datatype="&xsd;string">Grapes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Berries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#GreenApples -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;GreenApples">
+        <rdfs:label>GreenApples</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Apples"/>
+        <owl:disjointWith rdf:resource="&DOC_Ontology_Hobbs_Taylor2;RedApples"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#GreenBellPeppers -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;GreenBellPeppers">
+        <rdfs:label>GreenBellPeppers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;BellPeppers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#GreenGrapes -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;GreenGrapes">
+        <rdfs:label>GreenGrapes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Grapes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#GreenJuices -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;GreenJuices">
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Juices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#GreenSmoothies -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;GreenSmoothies">
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Smoothies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#GreenTeas -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;GreenTeas">
+        <rdfs:label>GreenTeas</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;HerbalTeas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#HerbalTeas -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;HerbalTeas">
+        <rdfs:label>HerbalTeas</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Infusions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Honeydew -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Honeydew">
+        <rdfs:label>Honeydew</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Melons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#HotWater -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;HotWater">
+        <rdfs:label>HotWater</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Water"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Infusions -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Infusions">
+        <rdfs:label>Infusions</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Beverages"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasRecipe"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Juices -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Juices">
+        <rdfs:label rdf:datatype="&xsd;string">Juices</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Beverages"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasIngredientSpice"/>
+                <owl:someValuesFrom rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Spices"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasIngredientFruit"/>
+                <owl:someValuesFrom rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Fruits"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasIngredientSupplement"/>
+                        <owl:someValuesFrom rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Supplements"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasRecipe"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasIngredientFruit"/>
+                        <owl:someValuesFrom rdf:resource="&DOC_Ontology_Hobbs_Taylor2;TropicalFruits"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasIngredientVegetable"/>
+                <owl:someValuesFrom rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Vegetables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Kale -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Kale">
+        <rdfs:label>Kale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Leaves"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCarbohydrates"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">9</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFiber"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">4</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSubstituteVegetable"/>
+                <owl:someValuesFrom rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Spinach"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasProtien"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">4</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCalories"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">49</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSaturatedFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isOptional"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSugar"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSodium"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">38</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Kiwis -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Kiwis">
+        <rdfs:label rdf:datatype="&xsd;string">Kiwis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;TropicalFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Leaves -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Leaves">
+        <rdfs:label>Leaves</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Lemons -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Lemons">
+        <rdfs:label rdf:datatype="&xsd;string">Lemons</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;CitrusFruits"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFiber"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSodium"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSaturatedFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasProtien"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCarbohydrates"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isOptional"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCalories"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">17</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSugar"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Lettuce -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Lettuce">
+        <rdfs:label>Lettuce</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Leaves"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCarbohydrates"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSugar"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSodium"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">28</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasProtien"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFiber"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSaturatedFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isOptional"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCalories"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">15</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Limes -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Limes">
+        <rdfs:label rdf:datatype="&xsd;string">Limes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;CitrusFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Mangos -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Mangos">
+        <rdfs:label rdf:datatype="&xsd;string">Mangos</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;TropicalFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Melons -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Melons">
+        <rdfs:label rdf:datatype="&xsd;string">Melons</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Mint -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Mint">
+        <rdfs:label>Mint</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Spices"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isOptional"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Nectarines -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Nectarines">
+        <rdfs:label>Nectarines</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;PittedFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#NonDairyMilk -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;NonDairyMilk">
+        <rdfs:label>NonDairyMilk</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Infusions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#OolongTeas -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;OolongTeas">
+        <rdfs:label>OolongTeas</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;HerbalTeas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#OrangeJuice -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;OrangeJuice">
         <rdfs:label>OrangeJuices</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9rw5gzni1NpocJEAA4KKo4"/>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Juices"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#OrangeSmoothies -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#OrangeSmoothies -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#OrangeSmoothies">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDhf5uqeNfUkZRKX01rw8ds"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;OrangeSmoothies">
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Smoothies"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#Potatoes -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Oranges -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#Potatoes">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9NxBQ8XyonDc5A4l3QftZl"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Oranges">
+        <rdfs:label rdf:datatype="&xsd;string">Oranges</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;CitrusFruits"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCarbohydrates"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">11</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSubstituteFruit"/>
+                <owl:someValuesFrom rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Tangerines"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSaturatedFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasProtien"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCalories"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">45</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFiber"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSugar"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">9</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSodium"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#PurpleJuice -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Papayas -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#PurpleJuice">
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Papayas">
+        <rdfs:label rdf:datatype="&xsd;string">Papayas</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;TropicalFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Parsley -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Parsley">
+        <rdfs:label>Parsley</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Spices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Peaches -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Peaches">
+        <rdfs:label rdf:datatype="&xsd;string">Peaches</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;PittedFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Pears -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Pears">
+        <rdfs:label>Pears</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;CoredFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Pineapples -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Pineapples">
+        <rdfs:label rdf:datatype="&xsd;string">Pineapples</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;TropicalFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#PittedFruits -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;PittedFruits">
+        <rdfs:label rdf:datatype="&xsd;string">PittedFruits</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Plums -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Plums">
+        <rdfs:label>Plums</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;PittedFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Potatoes -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Potatoes">
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Tubers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#PurpleGrapes -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;PurpleGrapes">
+        <rdfs:label>PurpleGrapes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Grapes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#PurpleJuice -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;PurpleJuice">
         <rdfs:label>PurpleJuices</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9rw5gzni1NpocJEAA4KKo4"/>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Juices"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#PurplePotatoes -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#PurplePotatoes -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#PurplePotatoes">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#Potatoes"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;PurplePotatoes">
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Potatoes"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#PurpleSmoothies -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#PurpleSmoothies -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#PurpleSmoothies">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDhf5uqeNfUkZRKX01rw8ds"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;PurpleSmoothies">
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Smoothies"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#RedJuices -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Radish -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#RedJuices">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9rw5gzni1NpocJEAA4KKo4"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Radish">
+        <rdfs:label>Radish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Roots"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#RedPotatoes -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Raspberries -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#RedPotatoes">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#Potatoes"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Raspberries">
+        <rdfs:label>Raspberries</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Berries"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#RedSmoothies -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#RedApples -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#RedSmoothies">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDhf5uqeNfUkZRKX01rw8ds"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;RedApples">
+        <rdfs:label>RedApples</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Apples"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#Rhubarb -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#RedBellPeppers -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#Rhubarb">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7xeVTmCRh2a2VrMViQtItO"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;RedBellPeppers">
+        <rdfs:label>RedBellPeppers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;BellPeppers"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#Yams -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#RedGrapes -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#Yams">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9NxBQ8XyonDc5A4l3QftZl"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;RedGrapes">
+        <rdfs:label>RedGrapes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Grapes"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#YellowPotatoes -->
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#RedJuices -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#YellowPotatoes">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#Potatoes"/>
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;RedJuices">
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Juices"/>
     </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#RedPotatoes -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;RedPotatoes">
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Potatoes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#RedSmoothies -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;RedSmoothies">
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Smoothies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Rhubarb -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Rhubarb">
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Stems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Roots -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Roots">
+        <rdfs:label>Roots</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Smoothies -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Smoothies">
+        <rdfs:label rdf:datatype="&xsd;string">Smoothies</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Beverages"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasIngredient"/>
+                <owl:onClass rdf:resource="&DOC_Ontology_Hobbs_Taylor2;TropicalFruits"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasRecipe"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasIngredientVegetable"/>
+                <owl:someValuesFrom rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Vegetables"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasIngredientFruit"/>
+                <owl:someValuesFrom rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Fruits"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#SoyMilk -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;SoyMilk">
+        <rdfs:label>SoyMilk</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;NonDairyMilk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Spices -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Spices">
+        <rdfs:label>Spices</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Spinach -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Spinach">
+        <rdfs:label>Spinach</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Leaves"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isOptional"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasProtien"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">8</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSaturatedFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCalories"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">66</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSubstituteVegetable"/>
+                <owl:someValuesFrom rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Kale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSodium"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">224</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCarbohydrates"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">10</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFiber"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">6</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSugar"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Stems -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Stems">
+        <rdfs:label>Stems</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Strawberries -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Strawberries">
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Berries"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFiber"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasProtien"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCalories"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">47</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSaturatedFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isOptional"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSugar"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">7</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSodium"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCarbohydrates"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">11</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Supplements -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Supplements">
+        <rdfs:label rdf:datatype="&xsd;string">Supplements</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#SweetPotatoes -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;SweetPotatoes">
+        <rdfs:label rdf:datatype="&xsd;string">SweetPotatoes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Tubers"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSubstituteVegetable"/>
+                <owl:someValuesFrom rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Carrots"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Tangerines -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Tangerines">
+        <rdfs:label>Tangerines</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;CitrusFruits"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSubstituteFruit"/>
+                <owl:someValuesFrom rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Oranges"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Thyme -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Thyme">
+        <rdfs:label>Thyme</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Spices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Tomatoes -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Tomatoes">
+        <rdfs:label rdf:datatype="&xsd;string">Tomatoes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;VegetableFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#TropicalFruits -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;TropicalFruits">
+        <rdfs:label>TropicalFruits</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Tubers -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Tubers">
+        <rdfs:label>Tubers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#VegetableFruits -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;VegetableFruits">
+        <rdfs:label>VegetableFruits</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Vegetables -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Vegetables">
+        <rdfs:label rdf:datatype="&xsd;string">Vegetables</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Walnuts -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Walnuts">
+        <rdfs:label rdf:datatype="&xsd;string">Walnuts</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Supplements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Water -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Water">
+        <rdfs:label>Water</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Infusions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Watermelons -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Watermelons">
+        <rdfs:label rdf:datatype="&xsd;string">Watermelons</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Melons"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCarbohydrates"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">22</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFiber"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;isOptional"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasProtien"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSaturatedFat"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasCalories"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">87</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSodium"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOC_Ontology_Hobbs_Taylor2;hasSugar"/>
+                <owl:hasValue rdf:datatype="&xsd;integer">18</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#WheyProtein -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;WheyProtein">
+        <rdfs:label>WheyProtien</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Supplements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Yams -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;Yams">
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Tubers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#YellowBellPeppers -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;YellowBellPeppers">
+        <rdfs:label>YellowBellPeppers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;BellPeppers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#YellowPotatoes -->
+
+    <owl:Class rdf:about="&DOC_Ontology_Hobbs_Taylor2;YellowPotatoes">
+        <rdfs:subClassOf rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Potatoes"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Apple_Green_One_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Apple_Green_One_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;GreenApples"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Apple_Green_Two_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Apple_Green_Two_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Apples"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">2.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Apple_Red_One_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Apple_Red_One_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Apples"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Apple_Red_Two_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Apple_Red_Two_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;RedApples"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">2.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Avocado_Half -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Avocado_Half">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Avocados"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">0.5</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Half</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Banana_Half -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Banana_Half">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Bananas"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">0.5</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Half</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Banana_Whole -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Banana_Whole">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Bananas"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Whole</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Basil_Handful -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Basil_Handful">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Basil"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Handful</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Beet_One_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Beet_One_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Beets"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Beet_Two_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Beet_Two_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Beets"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">2.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Blueberries_One_Handful -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Blueberries_One_Handful">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Blueberries"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Handful</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Blueberries_Two_Handful -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Blueberries_Two_Handful">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Blueberries"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">2.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Handful</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Carrot_Four_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Carrot_Four_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Carrots"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">4.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Carrot_One_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Carrot_One_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Carrots"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Carrot_Three_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Carrot_Three_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Carrots"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">3.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Celery_One_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Celery_One_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Celery"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Celery_Six_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Celery_Six_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Celery"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">6.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Celery_Three_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Celery_Three_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Celery"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">3.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Celery_Two_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Celery_Two_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Celery"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">2.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Coconut_Water_Four_Ounces -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Coconut_Water_Four_Ounces">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;CoconutWater"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">4.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Ounces</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Coconut_Water_Half_Cup -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Coconut_Water_Half_Cup">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;CoconutWater"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">0.5</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Cup</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Coconut_Water_One_Cup -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Coconut_Water_One_Cup">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;CoconutWater"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Cup</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Cucumber_Half_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Cucumber_Half_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Cucumbers"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">0.5</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Cucumber_One_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Cucumber_One_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Cucumbers"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Cucumber_Two_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Cucumber_Two_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Cucumbers"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">2.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Dates_One_Cup -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Dates_One_Cup">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Dates"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Cup</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Ginger_One_Inch -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Ginger_One_Inch">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Ginger"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Inch</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Ginger_Quarter_Inch -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Ginger_Quarter_Inch">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Ginger"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">0.25</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Inch</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Grapes_Purple_Thirty -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Grapes_Purple_Thirty">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;PurpleGrapes"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">30.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Grapes_Red_Thirty -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Grapes_Red_Thirty">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;RedGrapes"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">30.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Ice_Cubes_Handful -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Ice_Cubes_Handful">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Water"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Handful</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Juice_Garden_Of_Eden -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Juice_Garden_Of_Eden">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;GreenJuices"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipe rdf:datatype="&xsd;boolean">true</DOC_Ontology_Hobbs_Taylor2:hasRecipe>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>Garden of Eden</DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>
+        <DOC_Ontology_Hobbs_Taylor2:isJuiceColor>Green</DOC_Ontology_Hobbs_Taylor2:isJuiceColor>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Apple_Green_Two_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Celery_Three_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientSpice rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Parsley_One_Handful"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Spinach_Three_Handful"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Juice_Garden_Variety -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Juice_Garden_Variety">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;GreenJuices"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipe rdf:datatype="&xsd;boolean">true</DOC_Ontology_Hobbs_Taylor2:hasRecipe>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>Garden Variety</DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>
+        <DOC_Ontology_Hobbs_Taylor2:isJuiceColor>Green</DOC_Ontology_Hobbs_Taylor2:isJuiceColor>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Apple_Green_Two_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Cucumber_Two_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Kale_Six_Leaves"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientSpice rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Parsley_One_Handful"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Juice_Mean_Green_Machine -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Juice_Mean_Green_Machine">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;GreenJuices"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipe rdf:datatype="&xsd;boolean">true</DOC_Ontology_Hobbs_Taylor2:hasRecipe>
+        <DOC_Ontology_Hobbs_Taylor2:isJuiceColor>Green</DOC_Ontology_Hobbs_Taylor2:isJuiceColor>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>Mean Green Machine</DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Apple_Green_One_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Celery_Two_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Cucumber_One_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientSpice rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Ginger_One_Inch"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Kale_Six_Leaves"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Lemon_Half"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Juice_Rejuvinator -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Juice_Rejuvinator">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;GreenJuices"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipe rdf:datatype="&xsd;boolean">true</DOC_Ontology_Hobbs_Taylor2:hasRecipe>
+        <DOC_Ontology_Hobbs_Taylor2:isJuiceColor>Green</DOC_Ontology_Hobbs_Taylor2:isJuiceColor>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>The Rejuvinator</DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Celery_Six_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Cucumber_Two_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Kale_Ten_Leaves"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Pear_Two_Medium"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Juice_Rise_and_Shine -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Juice_Rise_and_Shine">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;OrangeJuice"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipe rdf:datatype="&xsd;boolean">true</DOC_Ontology_Hobbs_Taylor2:hasRecipe>
+        <DOC_Ontology_Hobbs_Taylor2:isJuiceColor>Orange</DOC_Ontology_Hobbs_Taylor2:isJuiceColor>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>Rise and Shine</DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Apple_Red_Two_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Carrot_Four_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Lemon_One_Medium"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Juice_Sporty_Spice -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Juice_Sporty_Spice">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;RedJuices"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipe rdf:datatype="&xsd;boolean">true</DOC_Ontology_Hobbs_Taylor2:hasRecipe>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>Sporty Spice</DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>
+        <DOC_Ontology_Hobbs_Taylor2:isJuiceColor>Red</DOC_Ontology_Hobbs_Taylor2:isJuiceColor>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientSpice rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Basil_Handful"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Beet_Two_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientSupplement rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Carrot_One_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Celery_Two_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Lemon_Half"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Orange_One_Small"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Juice_Stars_and_Stripes -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Juice_Stars_and_Stripes">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;PurpleJuice"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipe rdf:datatype="&xsd;boolean">true</DOC_Ontology_Hobbs_Taylor2:hasRecipe>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>Stars and Stripes</DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>
+        <DOC_Ontology_Hobbs_Taylor2:isJuiceColor>Purple</DOC_Ontology_Hobbs_Taylor2:isJuiceColor>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Blueberries_Two_Handful"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Kale_Six_Leaves"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Watermelon_Quarter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Juice_Sunrise -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Juice_Sunrise">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;OrangeJuice"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipe rdf:datatype="&xsd;boolean">true</DOC_Ontology_Hobbs_Taylor2:hasRecipe>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>Sunrise</DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>
+        <DOC_Ontology_Hobbs_Taylor2:isJuiceColor>Orange</DOC_Ontology_Hobbs_Taylor2:isJuiceColor>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Beet_One_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Carrot_Four_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Orange_Two_Medium"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Juice_Sunset -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Juice_Sunset">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;OrangeJuice"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipe rdf:datatype="&xsd;boolean">true</DOC_Ontology_Hobbs_Taylor2:hasRecipe>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>Sunset</DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>
+        <DOC_Ontology_Hobbs_Taylor2:isJuiceColor>Orange</DOC_Ontology_Hobbs_Taylor2:isJuiceColor>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Beet_One_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Orange_Two_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Sweet_Potato_One_Medium"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Juice_The_Cleaner -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Juice_The_Cleaner">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;GreenJuices"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipe rdf:datatype="&xsd;boolean">true</DOC_Ontology_Hobbs_Taylor2:hasRecipe>
+        <DOC_Ontology_Hobbs_Taylor2:isJuiceColor>Green</DOC_Ontology_Hobbs_Taylor2:isJuiceColor>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>The Cleaner</DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Celery_Six_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Cucumber_Two_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Pear_Two_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Spinach_Three_Handful"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Juice_Unbeetable -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Juice_Unbeetable">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;RedJuices"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipe rdf:datatype="&xsd;boolean">true</DOC_Ontology_Hobbs_Taylor2:hasRecipe>
+        <DOC_Ontology_Hobbs_Taylor2:isJuiceColor>Red</DOC_Ontology_Hobbs_Taylor2:isJuiceColor>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>Un-beet-able</DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Apple_Red_Two_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Beet_One_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Carrot_Three_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientSpice rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Ginger_One_Inch"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Lettuce_Three_Leaves"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Juice_WakeUp -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Juice_WakeUp">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;OrangeJuice"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipe rdf:datatype="&xsd;boolean">true</DOC_Ontology_Hobbs_Taylor2:hasRecipe>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>Wakeup!</DOC_Ontology_Hobbs_Taylor2:hasRecipeNameJuice>
+        <DOC_Ontology_Hobbs_Taylor2:isJuiceColor>Orange</DOC_Ontology_Hobbs_Taylor2:isJuiceColor>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Apple_Red_Two_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Carrot_Three_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientSpice rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Ginger_One_Inch"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Kale_Six_Leaves -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Kale_Six_Leaves">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Kale"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">6.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Kale_Ten_Leaves -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Kale_Ten_Leaves">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Kale"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">10.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Kale_Three_Leaves -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Kale_Three_Leaves">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Kale"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">3.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Lemon_Half -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Lemon_Half">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Lemons"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">0.5</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Half</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Lemon_One_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Lemon_One_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Lemons"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Lemon_Two_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Lemon_Two_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Lemons"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">2.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Lettuce_Six_Leaves -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Lettuce_Six_Leaves">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Lettuce"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">6.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Lettuce_Three_Leaves -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Lettuce_Three_Leaves">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Lettuce"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">3.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Lime_One_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Lime_One_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Limes"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Mango_One_Chopped -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Mango_One_Chopped">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Mangos"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Chopped</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Mint_One_Handful -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Mint_One_Handful">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Mint"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Handful</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Orange_One_Small -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Orange_One_Small">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Oranges"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Small</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Orange_Two_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Orange_Two_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Oranges"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">2.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Parsley_One_Handful -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Parsley_One_Handful">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Parsley"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Handful</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Peach_Two_Small -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Peach_Two_Small">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Peaches"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">2.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Small</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Pear_Half_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Pear_Half_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Pears"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">0.5</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Pear_Two_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Pear_Two_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Pears"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">2.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Smoothie_Get_Your_Green_On -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Smoothie_Get_Your_Green_On">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;GreenSmoothies"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipe rdf:datatype="&xsd;boolean">true</DOC_Ontology_Hobbs_Taylor2:hasRecipe>
+        <DOC_Ontology_Hobbs_Taylor2:isSmoothieColor>Green</DOC_Ontology_Hobbs_Taylor2:isSmoothieColor>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipeNameSmoothie>Get Your Green On</DOC_Ontology_Hobbs_Taylor2:hasRecipeNameSmoothie>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Apple_Green_One_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Banana_Half"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Celery_Two_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Cucumber_One_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientSupplement rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Dates_One_Cup"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredient rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Ice_Cubes_Handful"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Kale_Six_Leaves"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Lettuce_Six_Leaves"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredient rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Water_One_Cup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Smoothie_Super_Shamrock -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Smoothie_Super_Shamrock">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;GreenSmoothies"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipe rdf:datatype="&xsd;boolean">true</DOC_Ontology_Hobbs_Taylor2:hasRecipe>
+        <DOC_Ontology_Hobbs_Taylor2:hasRecipeNameSmoothie>Super Shamrock</DOC_Ontology_Hobbs_Taylor2:hasRecipeNameSmoothie>
+        <DOC_Ontology_Hobbs_Taylor2:isSmoothieColor>Green</DOC_Ontology_Hobbs_Taylor2:isSmoothieColor>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Avocado_Half"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Banana_Half"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredient rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Coconut_Water_Four_Ounces"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Cucumber_One_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredient rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Ice_Cubes_Handful"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientFruit rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Lemon_One_Medium"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasIngredientVegetable rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Lettuce_Six_Leaves"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Spinach_Four_Handful -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Spinach_Four_Handful">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Spinach"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">4.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Handful</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Spinach_One_Handful -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Spinach_One_Handful">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Spinach"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Handful</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Spinach_Three_Handful -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Spinach_Three_Handful">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Spinach"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">3.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Handful</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Spinach_Two_Handful -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Spinach_Two_Handful">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Spinach"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">2.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Handful</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Strawberries_Ten -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Strawberries_Ten">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Strawberries"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">10.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Sweet_Potato_One_Medium -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Sweet_Potato_One_Medium">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;SweetPotatoes"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Medium</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Water_One_Cup -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Water_One_Cup">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Water"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">1.0</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Cup</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Watermelon_Half -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Watermelon_Half">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Watermelons"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">0.5</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Half</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#Watermelon_Quarter -->
+
+    <owl:NamedIndividual rdf:about="&DOC_Ontology_Hobbs_Taylor2;Watermelon_Quarter">
+        <rdf:type rdf:resource="&DOC_Ontology_Hobbs_Taylor2;Watermelons"/>
+        <DOC_Ontology_Hobbs_Taylor2:hasQuantity rdf:datatype="&xsd;double">0.25</DOC_Ontology_Hobbs_Taylor2:hasQuantity>
+        <DOC_Ontology_Hobbs_Taylor2:hasSize>Quarter</DOC_Ontology_Hobbs_Taylor2:hasSize>
+    </owl:NamedIndividual>
     
 
 
@@ -1131,213 +3046,233 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R8PrV6nx814N5Pa2Xm4fxzX"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R8saY3hHtx6k2k9k5NKoBJi"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RDTjnhHEdAHGAEWlgdiBU6K"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;PurplePotatoes"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;RedPotatoes"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;YellowPotatoes"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#GreenJuices"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#OrangeJuice"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#PurpleJuice"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#RedJuices"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Beets"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Carrots"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Radish"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R7xeVTmCRh2a2VrMViQtItO"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R8WKDnMfWql1ZzMb2xUjtOS"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R9NxBQ8XyonDc5A4l3QftZl"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RDTd6xiUYbXiIrp1fagIzCm"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/Rw7MVvANVjTkD4WZtIvdSI"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Cantaloupes"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Honeydew"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Watermelons"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R3tRjVPjsGhmQ33dlPMjop"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R87vVpnD275mnmhqhSbylXv"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RDLbJBNH47wS6oogTpNn3QK"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;GreenJuices"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;OrangeJuice"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;PurpleJuice"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;RedJuices"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R8vvveyNSyo50Jraw4kem0H"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R9Id8L8vO9OlozHsIM47YOB"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RB7GKLP4R0lHD32bQZRCfce"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RDcIY2MB3keoEa0lfrb6hLP"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RMZR1x4lMmvL9M9XwDLUSc"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RUGwLFygLBmblqQVKt3XxF"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RfrkbGdS4l6fFjEAkdbEnn"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Basil"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Cilantro"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Cinnamon"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Ginger"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Mint"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Parsley"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Thyme"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R9rw5gzni1NpocJEAA4KKo4"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RDTMGUzUKYJMfdkESDbBQFF"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RDhf5uqeNfUkZRKX01rw8ds"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Infusions"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Juices"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Smoothies"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#GreenSmoothies"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#OrangeSmoothies"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#PurpleSmoothies"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#RedSmoothies"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Leaves"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Roots"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Stems"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Tubers"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;VegetableFruits"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R9rxq8NkMfZ4e8AhKZEPLTo"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RBSSODCUQYmMnyCj8JTVOGg"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RDFemPe7Y4bfzsQi9lgsCcb"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Blackberries"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Blueberries"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Cranberries"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Grapes"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Raspberries"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Strawberries"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R7kYdX2qkLZEY7A7cKj1Kc"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R8gsFGkjkZnmC8omUP6jxTv"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R9b4YBcLzxKCvR7s4LbOhC5"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RBiuURjMoAklkXmvxuQKgw6"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RC1TWDyqqx0dDAQrvmflsnP"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RC3U8tybGgjqNdpmHpVgi2d"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Almonds"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;CacaoPowder"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;ChiaSeeds"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;FlaxSeeds"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Walnuts"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;WheyProtein"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RCsHEtlEpUSTNXbVI321Axg"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#Asparagus"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#Rhubarb"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;BlackTeas"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;GreenTeas"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;OolongTeas"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R9JT2e3xZ12fK6sr0qAYn76"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RBUgsJjU6WMKXw6UoirxCCZ"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RF8uMDTk6ALwJF71QkhUaL"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Avocados"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Bananas"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Coconuts"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Dates"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Figs"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Kiwis"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Mangos"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Papayas"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Pineapples"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#PurplePotatoes"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#RedPotatoes"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#YellowPotatoes"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;GreenSmoothies"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;OrangeSmoothies"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;PurpleSmoothies"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;RedSmoothies"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RBDxNjCKHNNQ4HGipRQQVEh"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RBSxGQdKIRbcYCGUB0mOzEQ"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RbnRHupia6cgBG4X1LmRaY"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Apricots"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Cherries"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Nectarines"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Peaches"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Plums"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R8DUN7MmSYkdqRR7CXdaFNJ"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R9RNrz8tfBQWLcTiIbK8m8"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RCPTT4LWZ09cooAyhBT4DTz"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RCRxOXzOFHESaYpKfHF2iVX"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RDbFDzVHkH20GXAOguu2TZ8"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Grapefruits"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Lemons"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Limes"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Oranges"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Tangerines"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R7nYzpxiScsUZvVU1X9VNAg"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RBL9mLW9KMviazeVNgx9Nh3"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RBmNwWIqvE92KzSeQ3QPAMj"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RCZ5GPwa9yELCO2u2JKSwnk"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RPq6JhyL2JJPDaxbyIR9vA"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RSt4sa2Z1xIdMks5Q90Cqc"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/Rah8kbDCF20McvpNt67sio"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/Rcx2tbILAHCOtYp0KJ74T7"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/Rnzulgebh8YIGDoWqG5poR"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Potatoes"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;SweetPotatoes"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Yams"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R7v71SVrF2EwnmdTYqWNG3W"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R7wTLrYsHIlUpHXZggUG5oQ"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R883aV3lA2tz3pAZy2qt4zO"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RIfwpNJIWHGrJmNvTjpBg0"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RkHHtx5sibOIb1Fh7TD33G"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Berries"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;CitrusFruits"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;CoredFruits"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Melons"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;PittedFruits"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;TropicalFruits"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R99wKd5VRYRuDjs7bHzDoUV"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RBdcIhZP2yQ7pVZ4H2fFgFF"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RBxcEZxNawMWTAWQwuUZjX"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RCNaqD18JaPJjdjnuL4E6aA"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RCWAHrzNX5XbKrM1mSufil6"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RDje9GnmAppkmK3evkgMnh7"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;GreenBellPeppers"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;RedBellPeppers"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;YellowBellPeppers"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RBBJEpA5DeRwIC1aKwstj90"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#Potatoes"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/project/OoiAX0krzIcXYbkEb1PST#Yams"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Asparagus"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Celery"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Rhubarb"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R784ZZZpatQISva2CwsCqRl"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R94kG9XVwy3ffeRVHZtIXTx"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R9x252FO29bGwJm2UrfvFPz"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Kale"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Lettuce"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Spinach"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R9X2dc8jYSODEEaO1rYWETE"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R9h4m4h9shpt9Yk8LV0YHQ4"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RchQ1CFDUZOv1WqGzmVZuL"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RkYtYVYX5Ns7ZL5U1NPPrB"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/Rtwc1QJZQWyDwpvPSJJUr8"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Beverages"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Fruits"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Spices"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Supplements"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Vegetables"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasCalories"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasCarbohydrates"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasFat"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasFiber"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasProtien"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasQuantity"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasRecipe"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasRecipeName"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasSaturatedFat"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasSize"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasSodium"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;hasSugar"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;isColor"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;isOptional"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R7bmhQ7w6436xGaZe4Fmx2x"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R7isXRHpByn2ImtA1lNdcxO"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R9a5I0MRWnKfj9WUNql1N8t"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;HerbalTeas"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;NonDairyMilk"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Water"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R7AxQzQumCwXyhfyLYNrl5m"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R9X0DIWTMa7SDweVnuFScd0"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RLZgbvUOlRWIwDRuft7641"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/ROxfJ1GaeA1DX6TjBcOxV8"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/Ra1F0vlLgYC07WxNBm22j8"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;BellPeppers"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Cucumbers"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;Tomatoes"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/R7LOX2PegjvwvWy4rqRHvRb"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RBDKebmn3w58CmN5rweEnNM"/>
-            <rdf:Description rdf:about="http://webprotege.stanford.edu/RrNwDQd41VCrta80fEaBWw"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;GreenGrapes"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;PurpleGrapes"/>
+            <rdf:Description rdf:about="&DOC_Ontology_Hobbs_Taylor2;RedGrapes"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>

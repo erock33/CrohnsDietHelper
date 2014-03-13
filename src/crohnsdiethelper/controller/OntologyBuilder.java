@@ -28,11 +28,11 @@ import de.derivo.sparqldlapi.exceptions.QueryParserException;
 import de.derivo.sparqldlapi.types.QueryArgumentType;
 
 public class OntologyBuilder {
-    OWLOntologyManager owl_manager;
-    OWLOntology owl_ontology;
-    Ontology ontology;
-    OWLReasoner owl_reasoner;
-    
+    private OWLOntologyManager owl_manager;
+    private OWLOntology owl_ontology;
+    private Ontology ontology;
+    private OWLReasoner owl_reasoner;
+    private IRI iri;
     
     public OntologyBuilder() {
         super();
@@ -63,8 +63,8 @@ public class OntologyBuilder {
                 System.out.println("Found default");
                 this.owl_ontology = this.owl_manager.loadOntologyFromOntologyDocument(f);
 //                this.ontology = new Ontology(owl_ontology);
-                IRI documentIRI = this.owl_manager.getOntologyDocumentIRI(this.owl_ontology);
-                System.out.println("    from: " + documentIRI);
+                this.iri = this.owl_manager.getOntologyDocumentIRI(this.owl_ontology);
+                System.out.println("    from: " + this.iri);
             }
             else 
             {
@@ -72,16 +72,11 @@ public class OntologyBuilder {
                 return(null);
             }    
         }
-        
+                
         // Setup reasoner
         this.setupReasoner();
-//        OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
-//        ConsoleProgressMonitor progressMonitor = new ConsoleProgressMonitor();
-//        OWLReasonerConfiguration config = new SimpleConfiguration(
-//                progressMonitor);
-//        OWLReasoner reasoner = reasonerFactory.createReasoner(this.owl_ontology, config);
         
-        this.ontology = new Ontology(this.owl_ontology, this.owl_manager, this.owl_reasoner);
+        this.ontology = new Ontology(this.owl_ontology, this.owl_manager, this.owl_reasoner, this.iri);
         
         this.owl_reasoner.precomputeInferences();
         boolean consistent = this.owl_reasoner.isConsistent();
@@ -102,7 +97,6 @@ public class OntologyBuilder {
     }
 
     public Ontology getOntology() {
-        // TODO Auto-generated method stub
         return this.ontology;
     }
 }
