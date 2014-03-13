@@ -35,7 +35,7 @@ public class Workflow {
     
     public Workflow() {
         super();
-        this.frame = new JFrame();
+        this.frame = new JFrame("Crohns Diet Helper");
         this.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     
