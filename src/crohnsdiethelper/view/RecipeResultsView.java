@@ -6,6 +6,7 @@ import java.awt.GridLayout;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
@@ -16,24 +17,32 @@ import de.derivo.sparqldlapi.exceptions.QueryParserException;
 
 public class RecipeResultsView {
     JPanel panel;
-    JPanel ingrList;
+    JPanel ingrListPanel;
     Ontology ontology;
+    JButton back;
+    JLabel title;
+    JList list;
     
     public JPanel buildView(Ontology ontology) {
         this.ontology = ontology;
         this.panel = new JPanel();
         this.panel.setLayout(new BorderLayout(0, 0));
+        this.back = new JButton("Back");
+        this.title = new JLabel("");
+        this.list = new JList();
         
+        this.panel.add(title, BorderLayout.NORTH);
+        this.panel.add(this.list);
+        this.panel.add(this.back, BorderLayout.SOUTH);
         
         return this.panel;
     }
 
     public void updateView(String recipeIRI, ArrayList<String> drinkIngr) throws QueryParserException, QueryEngineException {
         String name = ontology.getRecipeName(recipeIRI);
-        JLabel title = new JLabel(name);
+        this.title.setText(name);
         Font titleFont = title.getFont();
         title.setFont(new Font(titleFont.getName(), Font.PLAIN, 20));
-        this.panel.add(title, BorderLayout.NORTH);
         
         String[] listVals = new String[drinkIngr.size()];
         
@@ -51,8 +60,12 @@ public class RecipeResultsView {
             j = j + 1;
         }
         
-        this.panel.add(new JList(listVals));
+        this.list.setListData(listVals);
+               
+        
     }
     
-    
+    public JButton getBackButton() {
+        return this.back;
+    }
 }
