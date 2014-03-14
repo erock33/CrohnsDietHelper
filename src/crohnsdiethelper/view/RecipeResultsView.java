@@ -31,6 +31,9 @@ public class RecipeResultsView {
         this.title = new JLabel("");
         this.list = new JList();
         
+        Font titleFont = title.getFont();
+        title.setFont(new Font(titleFont.getName(), Font.PLAIN, 20));
+        
         this.panel.add(title, BorderLayout.NORTH);
         this.panel.add(this.list);
         this.panel.add(this.back, BorderLayout.SOUTH);
@@ -41,8 +44,6 @@ public class RecipeResultsView {
     public void updateView(String recipeIRI, ArrayList<String> drinkIngr) throws QueryParserException, QueryEngineException {
         String name = ontology.getRecipeName(recipeIRI);
         this.title.setText(name);
-        Font titleFont = title.getFont();
-        title.setFont(new Font(titleFont.getName(), Font.PLAIN, 20));
         
         String[] listVals = new String[drinkIngr.size()];
         
@@ -61,7 +62,13 @@ public class RecipeResultsView {
         }
         
         this.list.setListData(listVals);
-               
+           
+        
+    }
+    
+    public void updateView() {
+        this.title.setText("No recipes found");
+        this.list.setListData(new String[0]);
         
     }
     

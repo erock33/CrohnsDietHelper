@@ -181,22 +181,21 @@ public class Workflow {
                }
                
                if( drinkFound ){
-                   
+                   try {
+                       resultsView.updateView(recipeIRI, drinkIngr);
+                    } catch (QueryParserException e1) {
+                        // TODO Auto-generated catch block
+                        e1.printStackTrace();
+                    } catch (QueryEngineException e1) {
+                        // TODO Auto-generated catch block
+                        e1.printStackTrace();
+                    }
                }
                else
                {
-                   
+                   resultsView.updateView();
                }
-               
-               try {
-                   resultsView.updateView(recipeIRI, drinkIngr);
-                } catch (QueryParserException e1) {
-                    // TODO Auto-generated catch block
-                    e1.printStackTrace();
-                } catch (QueryEngineException e1) {
-                    // TODO Auto-generated catch block
-                    e1.printStackTrace();
-                }
+
                 // Give recipe to results view
                 cardlayout.show(cardpanel, RECIPE_RESULTS);
             }
