@@ -26,6 +26,8 @@ public class Ontology {
     private OWLOntology owl_ontology;
     private OWLReasoner owl_reasoner;
     private IRI iri;
+    
+    final static String PREFIX = "http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#";
 
     public Ontology(OWLOntology ontology, OWLOntologyManager manager, OWLReasoner reasoner, IRI iri) {
         super();
@@ -44,7 +46,7 @@ public class Ontology {
 
         QueryEngine qengine = QueryEngine.create(this.owl_manager, this.owl_reasoner);
         Query q = Query.create(
-        "PREFIX root: <http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#>" 
+        "PREFIX root: <"+ PREFIX +">" 
         +" SELECT DISTINCT ?label "
         +" WHERE { "
         +" Class(?c), "
@@ -80,7 +82,7 @@ public class Ontology {
         OWLDataFactory fac = this.owl_manager.getOWLDataFactory();
         QueryEngine qengine = QueryEngine.create(this.owl_manager, this.owl_reasoner);
         Query q = Query.create(
-        "PREFIX root: <http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#>" 
+        "PREFIX root: <"+ PREFIX +">" 
         +" SELECT DISTINCT ?color "
         +" WHERE { "
         + "Individual(?i), "
@@ -106,7 +108,7 @@ public class Ontology {
         
         QueryEngine qengine = QueryEngine.create(this.owl_manager, this.owl_reasoner);
         String query = 
-        "PREFIX root: <http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#>" 
+        "PREFIX root: <" + PREFIX +">" 
         +" SELECT DISTINCT ?i "
         +" WHERE { "
             +" Individual(?i),"
@@ -135,9 +137,8 @@ public class Ontology {
     public ArrayList<String> recipeIngredientIRIs(String recipeIRI) throws QueryParserException, QueryEngineException {
         ArrayList<String> ingredients = new ArrayList<String>();
         QueryEngine qengine = QueryEngine.create(this.owl_manager, this.owl_reasoner);
-        String prefix = "http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#";
         String query = 
-        "PREFIX root: <"+ prefix +">"
+        "PREFIX root: <"+ PREFIX +">"
         +" SELECT DISTINCT ?ingredient "
         +" WHERE { "
         +" SubPropertyOf( ?ip, root:hasIngredient), "
@@ -167,9 +168,8 @@ public class Ontology {
         ArrayList<String> ingredients = new ArrayList<String>();
 
         QueryEngine qengine = QueryEngine.create(this.owl_manager, this.owl_reasoner);
-        String prefix = "http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#";
         String query = 
-        "PREFIX root: <"+ prefix +">"
+        "PREFIX root: <"+ PREFIX +">"
         +" SELECT DISTINCT ?inst "
         +" WHERE { "
         + "Type( ?inst, <"+ ingrClass +"> )"
@@ -197,9 +197,8 @@ public class Ontology {
         ArrayList<String> out = new ArrayList<String>();
         
         QueryEngine qengine = QueryEngine.create(this.owl_manager, this.owl_reasoner);
-        String prefix = "http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#";
         String query = 
-        "PREFIX root: <"+ prefix +">"
+        "PREFIX root: <"+ PREFIX +">"
         +" SELECT DISTINCT ?ingredient "
         +" WHERE { "
         +" SubPropertyOf( ?subprop, root:hasSubstitute), "
@@ -227,9 +226,8 @@ public class Ontology {
     public String getRecipeName(String recipeIRI) throws QueryParserException, QueryEngineException {
         String ret = "";
         QueryEngine qengine = QueryEngine.create(this.owl_manager, this.owl_reasoner);
-        String prefix = "http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#";
         String query = 
-        "PREFIX root: <"+ prefix +">"
+        "PREFIX root: <"+ PREFIX +">"
         +" SELECT DISTINCT ?name "
         +" WHERE { "
         +" PropertyValue( <" + recipeIRI + ">, root:hasRecipeNameJuice, ?name) "
@@ -262,9 +260,8 @@ public class Ontology {
         String label = "";
         
         QueryEngine qengine = QueryEngine.create(this.owl_manager, this.owl_reasoner);
-        String prefix = "http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#";
         String query = 
-        "PREFIX root: <"+ prefix +">"
+        "PREFIX root: <"+ PREFIX +">"
         +" SELECT DISTINCT ?label "
         +" WHERE { "
         +" Type( <"+ingrIRI+">, ?c),"
@@ -290,9 +287,8 @@ public class Ontology {
         String size = "";
         
         QueryEngine qengine = QueryEngine.create(this.owl_manager, this.owl_reasoner);
-        String prefix = "http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#";
         String query = 
-        "PREFIX root: <"+ prefix +">"
+        "PREFIX root: <"+ PREFIX +">"
         +" SELECT DISTINCT ?size "
         +" WHERE { "
         +" PropertyValue( <"+ingrIRI+">, root:hasSize, ?size)"
@@ -316,9 +312,8 @@ public class Ontology {
         String quant = "";
         
         QueryEngine qengine = QueryEngine.create(this.owl_manager, this.owl_reasoner);
-        String prefix = "http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#";
         String query = 
-        "PREFIX root: <"+ prefix +">"
+        "PREFIX root: <"+ PREFIX +">"
         +" SELECT DISTINCT ?quant "
         +" WHERE { "
         +" PropertyValue( <"+ingrIRI+">, root:hasQuantity, ?quant)"
