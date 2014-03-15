@@ -207,8 +207,5 @@ public class Workflow {
         
         
         this.frame.add(this.cardpanel);
-    }
-
-    
-    
+    }  
 }
