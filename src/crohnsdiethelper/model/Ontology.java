@@ -2,8 +2,6 @@ package crohnsdiethelper.model;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.Set;
-
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
