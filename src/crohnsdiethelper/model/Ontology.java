@@ -21,20 +21,19 @@ import de.derivo.sparqldlapi.exceptions.QueryEngineException;
 import de.derivo.sparqldlapi.exceptions.QueryParserException;
 
 public class Ontology {
-    private OWLOntology owl_ont;
     private OWLOntologyManager owl_manager;
     private OWLOntology owl_ontology;
     private OWLReasoner owl_reasoner;
-    private IRI iri;
+    private IRI document_iri;
     
     final static String PREFIX = "http://protege.stanford.edu/bmi210/DOC_Ontology_Hobbs_Taylor#";
 
-    public Ontology(OWLOntology ontology, OWLOntologyManager manager, OWLReasoner reasoner, IRI iri) {
+    public Ontology(OWLOntology ontology, OWLOntologyManager manager, OWLReasoner reasoner, IRI document_iri) {
         super();
         this.owl_ontology = ontology;
         this.owl_manager = manager;
         this.owl_reasoner = reasoner;
-        this.iri = iri;
+        this.document_iri = document_iri;
         
         this.owl_reasoner.precomputeInferences();
     }
@@ -47,7 +46,6 @@ public class Ontology {
     public ArrayList<String> getLeafLabels() throws QueryParserException, QueryEngineException {
         ArrayList<String> out = new ArrayList<String>();
         this.owl_reasoner.precomputeInferences();
-        OWLDataFactory fac = this.owl_manager.getOWLDataFactory();
 
         QueryEngine qengine = QueryEngine.create(this.owl_manager, this.owl_reasoner);
         Query q = Query.create(
@@ -67,7 +65,6 @@ public class Ontology {
         while( it.hasNext() ) {
             QueryBinding b = (QueryBinding)it.next();
             Set<QueryArgument> bset = b.getBoundArgs();
-            Iterator bset_it = bset.iterator();
 
             String label = b.get( QueryArgument.newVar("label")).toString();
             label = label.replaceAll("\"","");
@@ -79,7 +76,6 @@ public class Ontology {
     
     public ArrayList<String> getColors() throws QueryParserException, QueryEngineException {
         ArrayList<String> out = new ArrayList<String>();
-        OWLDataFactory fac = this.owl_manager.getOWLDataFactory();
         QueryEngine qengine = QueryEngine.create(this.owl_manager, this.owl_reasoner);
         Query q = Query.create(
         "PREFIX root: <"+ PREFIX +">" 
