@@ -1,5 +1,7 @@
 package crohnsdiethelper.view;
 
+import java.awt.BorderLayout;
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.ActionListener;
@@ -25,8 +27,9 @@ public class RecipeRestrictionsForm {
     ArrayList<JCheckBox> foodCheckboxes;
     JComboBox juicecolors;
     
-    public JPanel buildForm(Ontology ontology) throws QueryParserException, QueryEngineException {
+    public Component buildForm(Ontology ontology) throws QueryParserException, QueryEngineException {
         this.panel = new JPanel();
+        this.panel.setLayout(new BorderLayout(10, 10));
         this.foodCheckboxes = new ArrayList<JCheckBox>();
         
         ArrayList<String> foods = ontology.getLeafLabels();
@@ -35,10 +38,7 @@ public class RecipeRestrictionsForm {
         Collections.sort(foods);
         Collections.sort(colors);
         
-        String[] arr = foods.toArray(new String[ foods.size() ]);
         String[] colors_ar = colors.toArray(new String[colors.size()] );
-        JList mylist = new JList(arr);
-        mylist.setSelectionMode( ListSelectionModel.MULTIPLE_INTERVAL_SELECTION );
                 
         JPanel checkpanel = new JPanel(new GridLayout(foods.size(),2,5,5));
         checkpanel.setAutoscrolls(true);
@@ -50,17 +50,18 @@ public class RecipeRestrictionsForm {
             checkpanel.add(box);
         }
         
-        JScrollPane spane = new JScrollPane(checkpanel);
-        spane.setPreferredSize(new Dimension( 200, 800) );
+        JScrollPane spane = new JScrollPane(checkpanel, 
+                JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, 
+                JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        spane.setPreferredSize(new Dimension( 300, 400) );
         
-        
-        this.panel.add(spane);
+        this.panel.add(spane, BorderLayout.CENTER);
         
         this.juicecolors = new JComboBox(colors_ar);
-        this.panel.add(this.juicecolors);
+        this.panel.add(this.juicecolors, BorderLayout.EAST);
         
         this.findbtn = new JButton("Find");
-        this.panel.add(this.findbtn);
+        this.panel.add(this.findbtn, BorderLayout.NORTH);
            
         return this.panel;
     }

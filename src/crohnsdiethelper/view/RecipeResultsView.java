@@ -1,6 +1,7 @@
 package crohnsdiethelper.view;
 
 import java.awt.BorderLayout;
+import java.awt.Component;
 import java.awt.Font;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -9,6 +10,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 
 import crohnsdiethelper.model.Ontology;
 import de.derivo.sparqldlapi.exceptions.QueryEngineException;
@@ -22,7 +24,7 @@ public class RecipeResultsView {
     JLabel title;
     JList list;
     
-    public JPanel buildView(Ontology ontology) {
+    public Component buildView(Ontology ontology) {
         this.ontology = ontology;
         this.panel = new JPanel();
         this.panel.setLayout(new BorderLayout(0, 0));
@@ -37,7 +39,7 @@ public class RecipeResultsView {
         this.panel.add(this.list);
         this.panel.add(this.back, BorderLayout.SOUTH);
         
-        return this.panel;
+        return new JScrollPane(this.panel);
     }
 
     public void updateView(String recipeIRI, ArrayList<String> drinkIngr) throws QueryParserException, QueryEngineException {
@@ -61,16 +63,13 @@ public class RecipeResultsView {
             j = j + 1;
         }
         
-        this.list.setListData(listVals);
-           
-        
+        this.list.setListData(listVals);    
     }
     
     // This is called when we couldn't find any recipes
     public void updateView() {
         this.title.setText("No recipes found");
-        this.list.setListData(new String[0]);
-        
+        this.list.setListData(new String[0]);   
     }
     
     public JButton getBackButton() {

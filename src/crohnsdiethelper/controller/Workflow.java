@@ -1,8 +1,11 @@
 package crohnsdiethelper.controller;
 
 import java.awt.CardLayout;
+import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -49,6 +52,10 @@ public class Workflow {
     
     public void configure() throws OWLOntologyCreationException, QueryParserException, QueryEngineException {
         this.cardlayout = new CardLayout();
+        cardlayout.preferredLayoutSize(frame);
+        cardlayout.maximumLayoutSize(frame);
+        cardlayout.setHgap(10);
+        
         this.cardpanel = new JPanel( this.cardlayout );
         this.ontology_builder = new OntologyBuilder();
         this.ontology_builder.importOWLOntology();
@@ -58,7 +65,7 @@ public class Workflow {
     }
     
     public void start() {
-        this.frame.setSize(400,800);
+        this.frame.setSize(400,600);
         this.frame.pack();
         this.frame.setVisible(true);
     }
@@ -197,5 +204,13 @@ public class Workflow {
         
         
         this.frame.add(this.cardpanel);
+        
+        this.frame.addComponentListener( new ComponentAdapter() {
+            public void componentResized(ComponentEvent e) {
+                frame.validate();
+            }
+        });
     }  
+    
+    
 }
