@@ -1,12 +1,8 @@
 package crohnsdiethelper.controller;
 
 import java.io.File;
-import java.util.Iterator;
-import java.util.Set;
-
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.IRI;
-import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
@@ -18,14 +14,8 @@ import org.semanticweb.owlapi.reasoner.SimpleConfiguration;
 import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 
 import crohnsdiethelper.model.Ontology;
-import de.derivo.sparqldlapi.Query;
-import de.derivo.sparqldlapi.QueryArgument;
-import de.derivo.sparqldlapi.QueryBinding;
-import de.derivo.sparqldlapi.QueryEngine;
-import de.derivo.sparqldlapi.QueryResult;
 import de.derivo.sparqldlapi.exceptions.QueryEngineException;
 import de.derivo.sparqldlapi.exceptions.QueryParserException;
-import de.derivo.sparqldlapi.types.QueryArgumentType;
 
 public class OntologyBuilder {
     private OWLOntologyManager owl_manager;

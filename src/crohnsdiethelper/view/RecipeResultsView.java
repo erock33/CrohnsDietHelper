@@ -2,7 +2,6 @@ package crohnsdiethelper.view;
 
 import java.awt.BorderLayout;
 import java.awt.Font;
-import java.awt.GridLayout;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -45,6 +44,7 @@ public class RecipeResultsView {
         String name = ontology.getRecipeName(recipeIRI);
         this.title.setText(name);
         
+        // JList takes a String array, so we need to use that instead of an ArrayList
         String[] listVals = new String[drinkIngr.size()];
         
         Iterator i = drinkIngr.iterator();
@@ -66,6 +66,7 @@ public class RecipeResultsView {
         
     }
     
+    // This is called when we couldn't find any recipes
     public void updateView() {
         this.title.setText("No recipes found");
         this.list.setListData(new String[0]);

@@ -3,14 +3,12 @@ package crohnsdiethelper.controller;
 import java.awt.CardLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
@@ -21,6 +19,11 @@ import crohnsdiethelper.view.RecipeResultsView;
 import de.derivo.sparqldlapi.exceptions.QueryEngineException;
 import de.derivo.sparqldlapi.exceptions.QueryParserException;
 
+/*
+ * Workflow class
+ * 
+ * This class is responsible for coordinating between forms
+ */
 public class Workflow {    
     private JFrame frame;
     private CardLayout cardlayout;
@@ -73,6 +76,7 @@ public class Workflow {
             }
         });
         
+        // Here we have the code to find the 
         form.getFindButton().addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
                 // Get list of ingredients
