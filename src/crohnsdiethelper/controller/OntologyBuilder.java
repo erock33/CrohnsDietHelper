@@ -61,7 +61,6 @@ public class OntologyBuilder {
         this.ontology = new Ontology(this.owl_ontology, this.owl_manager, this.owl_reasoner, this.iri);
         
         this.owl_reasoner.precomputeInferences();
-        boolean consistent = this.owl_reasoner.isConsistent();
                
         return this.owl_ontology;
     }
