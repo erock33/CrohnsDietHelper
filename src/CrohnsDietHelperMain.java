@@ -13,7 +13,6 @@ import de.derivo.sparqldlapi.exceptions.QueryParserException;
 public class CrohnsDietHelperMain {
     
     public static void main(String[] args) throws OWLOntologyCreationException, QueryParserException, QueryEngineException {
-        // TODO Auto-generated method stub
         Workflow workflow = new Workflow();
         workflow.configure();
         workflow.start();
