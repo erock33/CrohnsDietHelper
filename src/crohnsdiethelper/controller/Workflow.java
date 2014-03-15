@@ -93,10 +93,8 @@ public class Workflow {
                        try {
                         ingrInst = ontology.getIngredientInstances(prefix + box.getText());
                         } catch (QueryParserException e1) {
-                            // TODO Auto-generated catch block
                             e1.printStackTrace();
                         } catch (QueryEngineException e1) {
-                            // TODO Auto-generated catch block
                             e1.printStackTrace();
                         }
                        userIngredients.addAll(ingrInst);
@@ -114,10 +112,8 @@ public class Workflow {
                try {
                     recipeIRIs = ontology.getRecipeIRIs(color);
                 } catch (QueryParserException e1) {
-                    // TODO Auto-generated catch block
                     e1.printStackTrace();
                 } catch (QueryEngineException e1) {
-                    // TODO Auto-generated catch block
                     e1.printStackTrace();
                 }
                 
@@ -134,10 +130,8 @@ public class Workflow {
                    try {
                     recipeIngredientIRI = ontology.recipeIngredientIRIs(recipeIRI);
                     } catch (QueryParserException e1) {
-                        // TODO Auto-generated catch block
                         e1.printStackTrace();
                     } catch (QueryEngineException e1) {
-                        // TODO Auto-generated catch block
                         e1.printStackTrace();
                     }
 
@@ -158,10 +152,8 @@ public class Workflow {
                            try {
                             subs = ontology.getIngredientSubstitutes(ingIRI);
                             } catch (QueryEngineException e1) {
-                                // TODO Auto-generated catch block
                                 e1.printStackTrace();
                             } catch (QueryParserException e1) {
-                                // TODO Auto-generated catch block
                                 e1.printStackTrace();
                             }
                            if( subs.size() == 0 ) {
@@ -188,10 +180,8 @@ public class Workflow {
                    try {
                        resultsView.updateView(recipeIRI, drinkIngr);
                     } catch (QueryParserException e1) {
-                        // TODO Auto-generated catch block
                         e1.printStackTrace();
                     } catch (QueryEngineException e1) {
-                        // TODO Auto-generated catch block
                         e1.printStackTrace();
                     }
                }
