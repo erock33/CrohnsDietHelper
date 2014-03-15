@@ -62,7 +62,6 @@ public class Ontology {
         Iterator<QueryBinding> it = qr.iterator();
         while( it.hasNext() ) {
             QueryBinding b = (QueryBinding)it.next();
-            Set<QueryArgument> bset = b.getBoundArgs();
 
             String label = b.get( QueryArgument.newVar("label")).toString();
             label = label.replaceAll("\"","");
@@ -115,14 +114,8 @@ public class Ontology {
 
         Iterator<QueryBinding> it = qr.iterator();
         while( it.hasNext() ) {
-            QueryBinding b = (QueryBinding)it.next();
-            Set<QueryArgument> bset = b.getBoundArgs();
-            Iterator bset_it = bset.iterator();
-            while(bset_it.hasNext()) {
-                QueryArgument qa = (QueryArgument) bset_it.next();
-
-                out.add(b.get(qa).toString());
-            }
+            QueryBinding b = (QueryBinding)it.next();            
+            out.add( b.get( QueryArgument.newVar("i")).toString() );
         }
 
         return out;
@@ -146,13 +139,7 @@ public class Ontology {
         Iterator<QueryBinding> it = qr.iterator();
         while( it.hasNext() ) {
             QueryBinding b = (QueryBinding)it.next();
-            Set<QueryArgument> bset = b.getBoundArgs();
-            Iterator bset_it = bset.iterator();
-            while(bset_it.hasNext()) {
-                QueryArgument qa = (QueryArgument) bset_it.next();
-
-                ingredients.add(b.get(qa).toString());
-            }
+            ingredients.add( b.get( QueryArgument.newVar("ingredient")).toString() );
         }
 
         return ingredients;
@@ -175,13 +162,7 @@ public class Ontology {
         Iterator<QueryBinding> it = qr.iterator();
         while( it.hasNext() ) {
             QueryBinding b = (QueryBinding)it.next();
-            Set<QueryArgument> bset = b.getBoundArgs();
-            Iterator bset_it = bset.iterator();
-            while(bset_it.hasNext()) {
-                QueryArgument qa = (QueryArgument) bset_it.next();
-
-                ingredients.add(b.get(qa).toString());
-            }
+            ingredients.add( b.get( QueryArgument.newVar("inst")).toString() );
         }
 
         return ingredients;
@@ -205,20 +186,14 @@ public class Ontology {
         Iterator<QueryBinding> it = qr.iterator();
         while( it.hasNext() ) {
             QueryBinding b = (QueryBinding)it.next();
-            Set<QueryArgument> bset = b.getBoundArgs();
-            Iterator bset_it = bset.iterator();
-            while(bset_it.hasNext()) {
-                QueryArgument qa = (QueryArgument) bset_it.next();
-
-                out.add(b.get(qa).toString());
-            }
+            out.add( b.get( QueryArgument.newVar("ingredient")).toString() );
         }
         
         return out;
     }
     
     public String getRecipeName(String recipeIRI) throws QueryParserException, QueryEngineException {
-        String ret = "";
+        String out = "";
         QueryEngine qengine = QueryEngine.create(this.owl_manager, this.owl_reasoner);
         String query = 
         "PREFIX root: <"+ PREFIX +">"
@@ -236,18 +211,13 @@ public class Ontology {
         Iterator<QueryBinding> it = qr.iterator();
         while( it.hasNext() ) {
             QueryBinding b = (QueryBinding)it.next();
-            Set<QueryArgument> bset = b.getBoundArgs();
-            Iterator bset_it = bset.iterator();
-            while(bset_it.hasNext()) {
-                QueryArgument qa = (QueryArgument) bset_it.next();
+            out = b.get( QueryArgument.newVar("name")).toString() ;
 
-                ret = b.get(qa).toString();
-                break;
-            }
+            // Just get the first one.
             break;
         }
         
-        return ret;
+        return out;
     }
     
     public String getIngredientLabel( String ingrIRI ) throws QueryParserException, QueryEngineException {
