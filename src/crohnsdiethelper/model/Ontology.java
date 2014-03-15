@@ -39,6 +39,11 @@ public class Ontology {
         this.owl_reasoner.precomputeInferences();
     }
     
+    /*
+     * This method gets the Annotation label for every instance which is part of a leaf class. 
+     * It does this by looking for classes with a subclass of Nothing, and then finding the
+     * instances of those classes.
+     */
     public ArrayList<String> getLeafLabels() throws QueryParserException, QueryEngineException {
         ArrayList<String> out = new ArrayList<String>();
         this.owl_reasoner.precomputeInferences();
@@ -63,11 +68,6 @@ public class Ontology {
             QueryBinding b = (QueryBinding)it.next();
             Set<QueryArgument> bset = b.getBoundArgs();
             Iterator bset_it = bset.iterator();
-            while(bset_it.hasNext()) {
-                QueryArgument qa = (QueryArgument) bset_it.next();
-
-                OWLNamedIndividual ind = fac.getOWLNamedIndividual(IRI.create(b.get(qa).toString()));
-            }
 
             String label = b.get( QueryArgument.newVar("label")).toString();
             label = label.replaceAll("\"","");
